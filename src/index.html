@@ -1,0 +1,46 @@
+
+  <!DOCTYPE html>
+  <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Minecraft Launcher</title>
+    <script src="startGame.js">
+    </script>
+
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet" />
+  <style>
+    body {
+      font-family: 'Press Start 2P', monospace;
+    }
+  </style>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="font-sans text-white flex flex-col justify-center h-screen items-center">
+    <div class="flex space-x-10">
+      <div class="flex flex-col">
+        <img src="minecraft-launcher.png" alt="logo" class="h-40">
+        <input  type="text" placeholder="USERNAME" class="text-black p-3 font-medium border-black border-4 mb-5" id="username">
+        <select class="p-3 px-5 border-4 mb-5 text-black font-medium" id="version">
+          <option value="1.20.4">1.20.4</option>
+          <option value="1.20.1">1.20.1</option>
+          <option value="1.19.4">1.19.4</option>
+          <option value="1.18.2">1.18.2</option>
+          <option value="1.17.1">1.17.1</option>
+          <option value="1.16.5">1.16.5</option>
+          <option value="1.12.2">1.12.2</option>
+          <option value="1.8.9">1.8.9</option>
+        </select>
+        
+    
+        <button onclick="launchGame()" class="p-3 bg-[#3C8527] shadow-[inset_0_8px_0_0_#52A535,inset_0_-8px_0_0_#2A641C] hover:bg-[#367723] font-medium">START GAME</button>
+        <button onclick="openRootFolder()" class="p-3 bg-[#3C8527] shadow-[inset_0_8px_0_0_#52A535,inset_0_-8px_0_0_#2A641C] hover:bg-[#367723] font-medium">ROOT FOLDER</button>
+      </div>
+      <textarea style="resize: none;" class="text-black border-4 mb-5 p-3  border-black" id="logField">
+        
+      </textarea>
+    </div>
+  </body>
+  
+
+</html>
